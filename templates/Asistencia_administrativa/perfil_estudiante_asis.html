@@ -48,6 +48,7 @@
       </div>
 
       <div class="cuadro_info">
+        <p class="info">{{perfil_estudiante}}</p>
       </div>
 
       <div class="pie_pagina">
@@ -55,10 +56,10 @@
         <div class="contacto">
           <h2 class="contactanos">CONTACTANOS</h2>
           <div><h2 class="direccion"> Calle 53 No 40-65 | Medellín </h2>
-            <img class="direccion_img" src="/fotos/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="direccion_img" src="/static/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
           <div><h2 class="correo">contacto@javiera.edu.co</h2>
-            <img class="correo_img" src="/fotos/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="correo_img" src="/static/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
         </div>
 
@@ -66,7 +67,7 @@
           <h2 class="horario_text">HORARIO</h2>
           <div><h2 class="horario">Lunes — Viernes
             6:25 am a 2:25 pm</h2>
-            <img class="horario_img" src="/fotos/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="horario_img" src="/static/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
         </div>
 
@@ -74,12 +75,12 @@
           <h2 class="redes_text">REDES SOCIALES</h2>
           <div class="facebook">
             <a href="https://www.facebook.com/profile.php?id=100095186540988" target="_blank">
-            <img class="logo_facebook" src="/fotos/facebook-icon-free-png.webp" width="40px" height="40px">
+            <img class="logo_facebook" src="/static/facebook-icon-free-png.webp" width="40px" height="40px">
             </a>
           </div>
           <div class="instagram">
             <a href="https://www.instagram.com/i.e.javiera.londono/" target="_blank">
-            <img class="logo_instagram" src="/fotos/Instagram_icon.png.webp" width="40px" height="40px">
+            <img class="logo_instagram" src="/static/Instagram_icon.png.webp" width="40px" height="40px">
             </a>
           </div>
         </div>
@@ -101,7 +102,7 @@
         <div class="reseñas">
             <a href="./reseñas_asis.html"><h2 class="subtitulo_4">RESEÑAS</h1></a>
         </div>
-        <img class="img" src="/fotos/logo-iupb.png">
+        <div class="sena"><img class="logo_sena" src="/static/logoSena.png"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
@@ -316,6 +317,19 @@ a{
 }
 .nav-item-iniciar{
     background-color: #cfcfcf;
+}
+.info{
+  margin: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sena{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_sena{
+  height: 10rem;
+  margin-top: 4rem;
 }
 
 </style>

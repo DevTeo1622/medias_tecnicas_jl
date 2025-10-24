@@ -38,7 +38,7 @@
       </nav>
       <div class="conten_titulos" style="margin-top: 70px;">
         <strong><h1 class="h1">BIENVENIDO</h1>
-        <h2 class="h2">MATEO GAVIRIA</h2>
+        <h2 class="h2">{{ usuario.nombre }}</h2>
         </strong>
       </div>
 
@@ -46,7 +46,7 @@
         <div class="row" style="margin-top: 60px;">
           <div class="col">
             <div class="card card_diseño" style="width: 18rem; margin: auto;">
-              <a href="/templates/Software/Info_soft.html"><img src="/templates/Fotos/fondo software.jpeg" class="card-img-top" style ="height: 150px;"></a>
+              <a href="/templates/Software/Info_soft.html"><img src="/static/fondo software.jpeg" class="card-img-top" style ="height: 150px;"></a>
               <div class="card-body">
                 <p class="card-text">DESARROLLO DE SOFTWARE</p>
               </div>
@@ -54,7 +54,7 @@
           </div>
           <div class="col">
             <div class="card card_diseño" style="width: 18rem; margin: auto;">
-            <a href="./Contenidos digitales/info_contenidos.html"><img src="/templates/Fotos/diseno-grafico.jpg" class="card-img-top" style="height: 150px;"></a>
+            <a href="/templates/Contenidos_digitales/info_contenidos.html"><img src="/static/diseno-grafico.jpg" class="card-img-top" style="height: 150px;"></a>
             <div class="card-body">
               <p class="card-text">CONTENIDOS DIGITALES</p>
             </div>
@@ -62,9 +62,9 @@
         </div>
           <div class="col">
             <div class="card card_diseño" style="width: 18rem; margin: auto;">
-              <a href="./Contabilidad/info_conta.html"><img src="/templates/Fotos/cont3.jpg" class="card-img-top" style="height: 150px;"></a>
+              <a href="/templates/Mantenimiento_motos/info_mantenimiento.html"><img src="/static/mantenimiento_motos.webp" class="card-img-top" style="height: 150px;"></a>
               <div class="card-body">
-                <p class="card-text">CONTABILIDAD</p>
+                <p class="card-text">MANTENIMIENTO DE MOTOS</p>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@
         <div class="row" style="margin-top: 20px;">
           <div class="col">
             <div class="card card_diseño" style="width: 18rem; left: 280px;" >
-              <a href="./Asistencia administrativa/info_asis.html"><img src="/templates/Fotos/asis_admin.jpg" class="card-img-top" style="height: 150PX;"></a>
+              <a href="/templates/Asistencia_administrativa/info_asis.html"><img src="/static/asis_admin.jpg" class="card-img-top" style="height: 150PX;"></a>
               <div class="card-body">
                 <p class="card-text">ASISTENCIA ADMINISTRATIVA</p>
               </div>
@@ -80,9 +80,9 @@
           </div>
           <div class="col">
             <div class="card card_diseño" style="width: 18rem; right: -70px;" >
-              <a href="./Recursos humanos/info_recursos.html"><img src="/templates/Fotos/RH.jpeg" class="card-img-top" style="height: 150PX;"></a>
+              <a href="/templates/Ventas_productos/info_ventas.html"><img src="/static/ventas_online_tiendanube.jpg" class="card-img-top" style="height: 150PX;"></a>
               <div class="card-body">
-                <p class="card-text">RECURSOS HUMANOS</p>
+                <p class="card-text">VENTAS DE PRODUCTOS EN LINEA</p>
               </div>
             </div>
           </div>
@@ -97,10 +97,10 @@
         <div class="contacto">
           <h2 class="contactanos">CONTACTANOS</h2>
           <div><h2 class="direccion"> Calle 53 No 40-65 | Medellín </h2>
-            <img class="direccion_img" src="/templates/Fotos/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="direccion_img" src="/static/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
           <div><h2 class="correo">contacto@javiera.edu.co</h2>
-            <img class="correo_img" src="/templates/Fotos/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="correo_img" src="/static/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
         </div>
 
@@ -108,7 +108,7 @@
           <h2 class="horario_text">HORARIO</h2>
           <div><h2 class="horario">Lunes — Viernes
             6:25 am a 2:25 pm</h2>
-            <img class="horario_img" src="/templates/Fotos/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="horario_img" src="/static/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
         </div>
 
@@ -116,12 +116,12 @@
           <h2 class="redes_text">REDES SOCIALES</h2>
           <div class="facebook">
             <a href="https://www.facebook.com/profile.php?id=100095186540988" target="_blank">
-            <img class="logo_facebook" src="/templates/Fotos/facebook-icon-free-png.webp" width="40px" height="40px">
+            <img class="logo_facebook" src="/static/facebook-icon-free-png.webp" width="40px" height="40px">
             </a>
           </div>
           <div class="instagram">
             <a href="https://www.instagram.com/i.e.javiera.londono/" target="_blank">
-            <img class="logo_instagram" src="/templates/Fotos/Instagram_icon.png.webp" width="40px" height="40px">
+            <img class="logo_instagram" src="/static/Instagram_icon.png.webp" width="40px" height="40px">
             </a>
           </div>
         </div>
@@ -152,9 +152,9 @@
     display:flex;
     margin-top: -15px;
     font-size: 60px;
-    margin-left: 35%;
-    margin-right: 35%--;
     text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
 .card_diseño{

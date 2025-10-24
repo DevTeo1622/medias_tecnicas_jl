@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: 17px; color:#0c3458";>
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Inicio</a>
+          <a class="navbar-brand" href="/index.html"><img class="logo_javiera" src="/static/logo_javiera.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -17,6 +17,9 @@
             <ul class="navbar-nav justify-content-end" style="width: 100%;">
               <li class="nav-item-iniciar">
               <a class="nav-link active" aria-current="page" href="/index.html">Salir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/templates/Software/material_soft.html">Material</a>
               </li>
               <li class="nav-item-sobre">
                 <a class="nav-link" href="/Principal/sobre_nosotros.html">Sobre nosotros</a>
@@ -38,15 +41,151 @@
         </div>
       </nav>
 
-      <div class="pie_pagina">
+      <div class="linea_barra">
+      </div>
+
+      <h1 class="titulo">EJERCICIOS</h1>
+      <h3 class="subtitulo">MEJORA TU LOGICA DE PROGRAMACIÓN</h3>
+      <p class="texto">Utiliza el lenguaje de programación de tu preferencia para resolver ejercicios que te ayudarán a mejorar tu forma de pensar y enfrentarte a retos de código</p>
+ 
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+          <h3>#1 {{ejercicio_nombre[0]}}</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>{{ejercicio_dificultad[0]}}</strong> {{ejercicio_descripcion[0]}}</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          <h3>#2 {{ejercicio_nombre[1]}}</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>{{ejercicio_dificultad[1]}}</strong> {{ejercicio_descripcion[1]}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          <h3>#3 {{ejercicio_nombre[2]}}</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>{{ejercicio_dificultad[2]}}</strong> {{ejercicio_descripcion[2]}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+          <h3>#4 {{ejercicio_nombre[3]}}</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>{{ejercicio_dificultad[3]}}</strong> {{ejercicio_descripcion[3]}}</p>
+        </div>
+      </div>
+    </div>
+        <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+          <h3>#5 {{ejercicio_nombre[4]}}</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>{{ejercicio_dificultad[4]}}</strong> {{ejercicio_descripcion[4]}}</p>
+        </div>
+      </div>
+    </div>
+        <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+          <h3>#6 {{ejercicio_nombre[5]}}</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>{{ejercicio_dificultad[5]}}</strong> {{ejercicio_descripcion[5]}}</p>
+        </div>
+      </div>
+    </div>
+        <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+          <h3>#7 {{ejercicio_nombre[6]}}</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>{{ejercicio_dificultad[6]}}</strong> {{ejercicio_descripcion[6]}}</p>
+        </div>
+      </div>
+    </div>
+        <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+          <h3>#8 {{ejercicio_nombre[7]}}</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>{{ejercicio_dificultad[7]}}</strong> {{ejercicio_descripcion[7]}}</p>
+        </div>
+      </div>
+    </div>
+        <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+          <h3>#9 {{ejercicio_nombre[8]}}</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>{{ejercicio_dificultad[8]}}</strong> {{ejercicio_descripcion[8]}}</p>
+        </div>
+      </div>
+    </div>
+        <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+          <h3>#10 {{ejercicio_nombre[9]}}</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <p><strong>{{ejercicio_dificultad[9]}}</strong> {{ejercicio_descripcion[9]}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="pie_pagina">
 
         <div class="contacto">
           <h2 class="contactanos">CONTACTANOS</h2>
           <div><h2 class="direccion"> Calle 53 No 40-65 | Medellín </h2>
-            <img class="direccion_img" src="/fotos/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="direccion_img" src="/static/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
           <div><h2 class="correo">contacto@javiera.edu.co</h2>
-            <img class="correo_img" src="/fotos/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="correo_img" src="/static/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
         </div>
 
@@ -54,7 +193,7 @@
           <h2 class="horario_text">HORARIO</h2>
           <div><h2 class="horario">Lunes — Viernes
             6:25 am a 2:25 pm</h2>
-            <img class="horario_img" src="/fotos/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="horario_img" src="/static/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
         </div>
 
@@ -62,63 +201,17 @@
           <h2 class="redes_text">REDES SOCIALES</h2>
           <div class="facebook">
             <a href="https://www.facebook.com/profile.php?id=100095186540988" target="_blank">
-            <img class="logo_facebook" src="/fotos/facebook-icon-free-png.webp" width="40px" height="40px">
+            <img class="logo_facebook" src="/static/facebook-icon-free-png.webp" width="40px" height="40px">
             </a>
           </div>
           <div class="instagram">
             <a href="https://www.instagram.com/i.e.javiera.londono/" target="_blank">
-            <img class="logo_instagram" src="/fotos/Instagram_icon.png.webp" width="40px" height="40px">
+            <img class="logo_instagram" src="/static/Instagram_icon.png.webp" width="40px" height="40px">
             </a>
           </div>
         </div>
 
       </div>
-
-      <div class="linea_barra">
-      </div>
-
-      <h1 class="titulo">EJERCICIOS</h1>
-      <h3 class="subtitulo">MEJORA TU LOGICA DE PROGRAMACION</h3>
-      <p class="texto">Utiliza el lenguaje de programacion de tu preferencia para resolver ejercicios que te ayudaran a mejorar tu forma de pensar y enfrentarte a retos de codigo</p>
-
-  <div class="accordion" id="accordionPanelsStayOpenExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-          <h3>#1 LA SUCESION DE FIBONACCI</h3>
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          <p><strong>FACIL</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quod. Vitae eaque maxime dolores nihil voluptatem quasi atque quisquam commodi deserunt praesentium voluptate, eligendi corporis in deleniti error, quam et.</p>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-          <h3>#2 ¿ES UN NUMERO PRIMO?</h3>
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-        <div class="accordion-body">
-          <p><strong>MEDIO</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus quos nostrum tempore debitis sit, corrupti blanditiis accusantium harum nulla error modi, assumenda voluptatum qui nam fugiat aut illum laudantium.</p>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-          <h3>#3 CONSTRUYE UNA PIRAMIDE</h3>
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-        <div class="accordion-body">
-          <p><strong>DIFICIL</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa voluptates sapiente. Voluptatum officia provident molestiae tempore doloribus soluta aliquid culpa, nostrum unde repellat! Eveniet alias laudantium omnis totam at.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -131,6 +224,8 @@
 
 body{
     background-color: #0c3458;
+    display: flex;
+    flex-direction: column;
 }
 .nav-item-sobre:hover{
     background-color: #cfcfcf;
@@ -147,14 +242,26 @@ body{
 .nav-item-iniciar{
     background-color: #cfcfcf;
 }
+.nav-link:hover{
+  background-color: #cfcfcf;
+}
 .pie_pagina{
-    background-color: #282828;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 400px;
-    top: 1148px;
-    color: #fff;
+  background-color: #282828;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  margin-top: auto; 
+  margin-top: 5rem;
+}
+.navbar-nav{
+ margin-top: -0.5rem;
+}
+.logo_javiera{
+ height: 4.5rem;
+ margin-left: 1rem;
+ margin-top: -1.2rem;
+
 }
 .contactanos{
     color: #ffffff;
@@ -284,6 +391,9 @@ body{
     margin-left: 37rem;
     margin-top: 5rem;
     font-size: 4rem;
+}
+.accordion{
+  margin-top: 3rem;
 }
 
 </style>
