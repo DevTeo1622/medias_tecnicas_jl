@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: 17px; color:#0c3458";>
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Inicio</a>
+          <a class="navbar-brand" href="/templates/Software/material_soft.html"><img class="logo_javiera" src="/static/logo_javiera.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -17,6 +17,9 @@
             <ul class="navbar-nav justify-content-end" style="width: 100%;">
               <li class="nav-item-iniciar">
               <a class="nav-link active" aria-current="page" href="/index.html">Salir</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/templates/Software/material_soft.html">Material</a>
               </li>
               <li class="nav-item-sobre">
                 <a class="nav-link" href="/Principal/sobre_nosotros.html">Sobre nosotros</a>
@@ -43,10 +46,10 @@
         <div class="contacto">
           <h2 class="contactanos">CONTACTANOS</h2>
           <div><h2 class="direccion"> Calle 53 No 40-65 | Medellín </h2>
-            <img class="direccion_img" src="/fotos/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="direccion_img" src="/static/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
           <div><h2 class="correo">contacto@javiera.edu.co</h2>
-            <img class="correo_img" src="/fotos/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="correo_img" src="/static/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
         </div>
 
@@ -54,7 +57,7 @@
           <h2 class="horario_text">HORARIO</h2>
           <div><h2 class="horario">Lunes — Viernes
             6:25 am a 2:25 pm</h2>
-            <img class="horario_img" src="/fotos/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="horario_img" src="/static/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
         </div>
 
@@ -62,12 +65,12 @@
           <h2 class="redes_text">REDES SOCIALES</h2>
           <div class="facebook">
             <a href="https://www.facebook.com/profile.php?id=100095186540988" target="_blank">
-            <img class="logo_facebook" src="/fotos/facebook-icon-free-png.webp" width="40px" height="40px">
+            <img class="logo_facebook" src="/static/facebook-icon-free-png.webp" width="40px" height="40px">
             </a>
           </div>
           <div class="instagram">
             <a href="https://www.instagram.com/i.e.javiera.londono/" target="_blank">
-            <img class="logo_instagram" src="/fotos/Instagram_icon.png.webp" width="40px" height="40px">
+            <img class="logo_instagram" src="/static/Instagram_icon.png.webp" width="40px" height="40px">
             </a>
           </div>
         </div>
@@ -79,11 +82,56 @@
 
 
       <div class="conten_titulos" style="margin-top: 70px;">
-        <strong><h1>DOCUMENTOS</h1>
+        <strong><h1 class="titulo_docs">DOCUMENTOS</h1>
         </strong>
       </div>
 
+      <div class="conten_docs">
+        <div class="card">
+          <h2 class="doc_nombre">{{doc_nombre[0]}}</h2>
+          <a href="{{ doc_enlace[0] }}" target="_blank"><img class="img_doc" src="/static/img_pdf.png"></a>
+        </div>
+        <div class="card">
+          <h2 class="doc_nombre">{{doc_nombre[1]}}</h2>
+          <a href="{{ doc_enlace[1] }}" target="_blank"><img class="img_doc" src="/static/img_pdf.png"></a>
+        </div>
+        <div class="card">
+          <h2 class="doc_nombre">{{doc_nombre[2]}}</h2>
+          <a href="{{ doc_enlace[2] }}" target="_blank"><img class="img_doc" src="/static/img_pdf.png"></a>
+        </div>
+        <div class="card">
+          <h2 class="doc_nombre">{{doc_nombre[3]}}</h2>
+          <a href="{{ doc_enlace[3] }}" target="_blank"><img class="img_doc" src="/static/img_pdf.png"></a>
+        </div>
+        <div class="card">
+          <h2 class="doc_nombre">{{doc_nombre[4]}}</h2>
+          <a href="{{ doc_enlace[4] }}" target="_blank"><img class="img_doc" src="/static/img_pdf.png"></a>
+        </div>
+      </div>
+
       <div class="Cuadro_azul">
+        <div class="conten_docs2">
+          <div class="card card2">
+            <h2 class="doc_nombre">{{doc_nombre[5]}}</h2>
+            <a href="{{ doc_enlace[5] }}" target="_blank"><img class="img_doc" src="/static/img_pdf.png"></a>
+          </div>
+          <div class="card card2">
+            <h2 class="doc_nombre">{{doc_nombre[6]}}</h2>
+            <a href="{{ doc_enlace[6] }}" target="_blank"><img class="img_doc" src="/static/img_pdf.png"></a>
+          </div>
+          <div class="card card2">
+            <h2 class="doc_nombre">{{doc_nombre[7]}}</h2>
+            <a href="{{ doc_enlace[7] }}" target="_blank"><img class="img_doc" src="/static/img_pdf.png"></a>
+          </div>
+          <div class="card card2">
+            <h2 class="doc_nombre">{{doc_nombre[8]}}</h2>
+            <a href="{{ doc_enlace[8] }}" target="_blank"><img class="img_doc" src="/static/img_pdf.png"></a>
+          </div>
+          <div class="card card2">
+            <h2 class="doc_nombre">{{doc_nombre[9]}}</h2>
+            <a href="{{ doc_enlace[9] }}" target="_blank"><img class="img_doc" src="/static/img_pdf.png"></a>
+          </div>
+        </div>
       </div>
 
 
@@ -99,13 +147,66 @@
 
 <style>
 
+.navbar-nav{
+  margin-top: -0.3rem;
+}
+.logo_javiera{
+  height: 4.5rem;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+
+}
+.bg-light{
+ height: 2.6rem;
+}
 .linea_barra{
-    background-color: #cccccc;
-    width: 100%;
-    height: 0.1px;
-    top: 56px;
-    position: absolute;
+background-color: #cccccc;
+width: 100%;
+height: 0.1px;
+top: 2.4rem;
+position: absolute;
+display: flex;
+}
+.nav-link:hover{
+  background-color: #cfcfcf;
+}
+.doc_nombre{
+  margin-bottom: 2rem;
+}
+.card{
+  width: 13rem;
+  border: none;
+  background-color: transparent;
+}
+.card2{
+  background-color: #0c3458;
+  border: none;
+}
+.conten_docs{
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0c3458;
+}
+.conten_docs2{
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.img_doc{
+  width: 11rem;
+  height: 12rem;
+}
+.conten_titulos{
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .Cuadro_azul{
     background-color: #0c3458;
@@ -127,72 +228,9 @@
 h1{
    color: #0c3458;
    display:flex;
-   margin-top: 30px;
+   margin-top: 0rem;
    font-size: 50px;
-   margin-left: 36%;
    text-align: center;
-}
-.Documentos{
-   border: solid #0c3458 4px;
-   border-radius: 10px;
-   width: 500px;
-   height: 250px;
-   position: absolute;
-   top: 270px;  
-   z-index: +1;
-   margin-left: 450px;
-   font-size: 1.2rem;
-   color: #ffffff;
-   background-color: #0c3458;
-   padding-left: 1rem;
-   padding-right: 0.5rem;
-   padding-top: 1rem;
-}
-.carousel {
-   
-   margin-top: 500px;
-   height: 400px;
-   width: 115%;
-   margin-left: -92px;
-}
-
-/* Estilo para las imágenes dentro del carrusel */
-.carousel-item img {
-   margin-left: 4px;
-   width: 95.5%; /* Imagen ocupa todo el ancho de la carta */
-   height: 200px; /* Tamaño fijo para la altura de las imágenes */
-   border-radius: 10px 10px 0 0;
-}
-
-/* Estilo para las cartas dentro del carrusel */
-.card {
-   border: none;
-   border-radius: 20px;
-   width: 14rem; /* Tamaño fijo de la carta */
-   height: 110%;
-   z-index: +1;
-}
-
-.card-img-top {
-   height: 200px; /* Tamaño imágenes */
-}
-
-.card-body {
-   padding: 2rem;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-   background-color: black;
-}
-.carousel-control-prev, .carousel-control-next {
-   width: 0%; 
-}
-.row {
-   margin-left: 60px;
-   margin-top: 50px;
-}
-.card-title{
-   font-size: 17px;
 }
 .pie_pagina{
     background-color: #282828;
@@ -279,25 +317,13 @@ h1{
     margin-left: 55%;
     margin-top: -15%;
 }
-.linea_barra{
-    background-color: #cccccc;
-    width: 100%;
-    height: 0.1px;
-    top: 56px;
-    position: absolute;
-    display: flex;
-}
 .ejercicios{
     color: #fff;
     padding-left: 39%;
     padding-top: 5rem;
     font-size: 3.5rem;
 }
-.subtitulo{
-    color: #fff;
-    padding-left: 18rem;
-    padding-top: 4rem;
-}
+
 .texto{
     color: #fff;
     padding-left: 18rem;

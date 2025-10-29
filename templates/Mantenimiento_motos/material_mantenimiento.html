@@ -9,23 +9,23 @@
 <body style="background: #ffffff;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: 17px; color: #0c3458;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Logo</a>
+          <a class="navbar-brand" href="/templates/Mantenimiento_motos/material_mantenimiento.html"><img class="logo_javiera" src="/static/logo_javiera.png" ></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav justify-content-end" style="width: 100%;">
               <li class="nav-item-iniciar">
-              <a class="nav-link active" aria-current="page" href="/Principal/login.html">Iniciar</a>
+              <a class="nav-link active" aria-current="page" href="/index.html">Salir</a>
               </li>
               <li class="nav-item-sobre">
                 <a class="nav-link" href="/Principal/sobre_nosotros.html">Sobre nosotros</a>
               </li>
               <li class="nav-item-proyectos">
-                <a class="nav-link" href="./chat_recursos.html">Chat</a>
+                <a class="nav-link" href="/templates/Mantenimiento_motos/chat_mantenimiento.html">Chat</a>
               </li>
               <li class="nav-item-material">
-                <a class="nav-link" href="./material_recursos.html">Material</a>
+                <a class="nav-link" href="/templates/Mantenimiento_motos/material_mantenimiento.html">Material</a>
               </li>
               <li class="nav-item-opciones dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,10 +55,10 @@
           <div class="contacto">
             <h2 class="contactanos">CONTACTANOS</h2>
             <div><h2 class="direccion"> Calle 53 No 40-65 | Medellín </h2>
-              <img class="direccion_img" src="/fotos/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+              <img class="direccion_img" src="/static/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
             </div>
             <div><h2 class="correo">contacto@javiera.edu.co</h2>
-              <img class="correo_img" src="/fotos/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+              <img class="correo_img" src="/static/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
             </div>
           </div>
   
@@ -66,7 +66,7 @@
             <h2 class="horario_text">HORARIO</h2>
             <div><h2 class="horario">Lunes — Viernes
               6:25 am a 2:25 pm</h2>
-              <img class="horario_img" src="/fotos/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+              <img class="horario_img" src="/static/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
             </div>
           </div>
   
@@ -74,12 +74,12 @@
             <h2 class="redes_text">REDES SOCIALES</h2>
             <div class="facebook">
               <a href="https://www.facebook.com/profile.php?id=100095186540988" target="_blank">
-              <img class="logo_facebook" src="/fotos/facebook-icon-free-png.webp" width="40px" height="40px">
+              <img class="logo_facebook" src="/static/facebook-icon-free-png.webp" width="40px" height="40px">
               </a>
             </div>
             <div class="instagram">
               <a href="https://www.instagram.com/i.e.javiera.londono/" target="_blank">
-              <img class="logo_instagram" src="/fotos/Instagram_icon.png.webp" width="40px" height="40px">
+              <img class="logo_instagram" src="/static/Instagram_icon.png.webp" width="40px" height="40px">
               </a>
             </div>
           </div>
@@ -88,22 +88,31 @@
 
         <div class="linea_barra">
         </div>
+
         <div class = "cuadro_video">
-          <video class = "hola_mundo" width="100%" height="550px"  controls>
-            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=VxrIZGQfxmE&t=699s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </video>
+
+          <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="8g1-NEO5U8I"></div>
+
+          <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+          <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+
+          <script>
+            const player = new Plyr('#player');
+          </script>
+          
         </div>
+        
         <div class="ejercicios">
-          <h2 class="titulo_ejercicios">EJERCICIOS</h2>
+          <a href="/templates/Mantenimiento_motos/ejercicios_mantenimiento.html"><h2 class="titulo_ejercicios">EJERCICIOS</h2></a>
         </div>
         <div class="enlaces">
-          <h2 class="titulo_enlaces">ENLACES</h2>
+          <a href="/templates/Mantenimiento_motos/enlaces_mantenimiento.html"><h2 class="titulo_enlaces">ENLACES</h2></a>
         </div>
         <div class="documentos">
-          <h2 class="titulo_documentos">DOCUMENTOS</h2>
+          <a href="/templates/Mantenimiento_motos/docs_mantenimiento.html"><h2 class="titulo_documentos">DOCUMENTOS</h2></a>
         </div>
         <div class="videos">
-          <h2 class="titulo_videos">VIDEOS</h2>
+          <a href="/templates/Mantenimiento_motos/grabaciones_mantenimiento.html"><h2 class="titulo_videos">VIDEOS</h2></a>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       </div>
@@ -220,22 +229,35 @@
     margin-left: 55%;
     margin-top: -15%;
 }
+.navbar-nav{
+  margin-top: -0.3rem;
+}
+.logo_javiera{
+  height: 4.5rem;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+
+}
+.bg-light{
+  height: 2.6rem;
+}
 .linea_barra{
-    background-color: #cccccc;
-    width: 100%;
-    height: 0.1px;
-    top: 50px;
-    position: absolute;
-    display: flex;
+  background-color: #cccccc;
+  width: 100%;
+  height: 0.1px;
+  top: 2.4rem;
+  position: absolute;
+  display: flex;
 }
 .cuadro_video{
     background-color: #0c3458;
     position: absolute;
     display: flex;
     width: 55%;
-    height: 600px;
+    height: 34.2rem;
     left: 10%;
     top: 45%;
+    border: 0.5rem solid #0c3458;
 }
 .hola_mundo{
     border: solid #0c3458 10px;
@@ -314,6 +336,9 @@
 }
 .nav-item-iniciar{
     background-color: #cfcfcf;
+}
+a{
+    text-decoration: none;
 }
 
 </style>

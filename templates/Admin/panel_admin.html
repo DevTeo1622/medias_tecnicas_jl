@@ -9,29 +9,48 @@
 <body>
 
     <div class="barra">
-      <img class="img_admin" src="/static/admin.png" alt="">
-      <h1 class="nombre"> Mateo Gaviria</h1>
+      <img class="img_admin" src="/static/img_admin.png" alt="">
+      <h1 class="nombre">{{ nombre_usuario }}</h1>
       <div class="linea">
       </div>
 
       <div class="dropdown">
-        <button class="dropbtn">Editar Perfil</button>
-        <div class="dropdown-content">
-          <a href="#">Editar nombre</a>
-          <a href="#">Editar identificacion</a>
-          <a href="#">Editar contraseña</a>
-        </div>
+        <a href="/templates/Admin/editar_admin.html"><button class="dropbtn">Editar Perfil</button></a>
       </div>
 
-      <a href="./inicio_admin.html"> <button class="agregar">Agregar usuario</button></a>
-      <a href="./inicio_admin.html"> <button class="editar">Editar usuario</button></a>
-      <a href="./inicio_admin.html"> <button class="eliminar">Eliminar usuario</button></a>
+      <a href="/templates/Admin/agregar_usuario.html"> <button class="agregar">Agregar usuario</button></a>
+      <a href="/templates/Admin/editar_usuarios.html"> <button class="editar">Editar usuario</button></a>
+      <a href="/Admin/eliminar_usuario.html"> <button class="eliminar">Eliminar usuario</button></a>
       <a href="./inicio_admin.html"> <button class="salir">Salir</button></a>
 
 
     </div>
 
-    <div class="cuadro_prueba"></div>
+<div class="tabla-bloque">
+  <h3>Todos los usuarios registrados</h3>
+  <table class="tabla-usuarios">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Identificación</th>
+        <th>Media Técnica</th>
+        <th>Grado</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for usuario in usuarios %}
+        <tr>
+          <td>{{ usuario.nombre }}</td>
+          <td>{{ usuario.identificacion }}</td>
+          <td>{{ usuario.media_tecnica }}</td>
+          <td>{{ usuario.grado }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+
 
 </body>
 </html>
@@ -58,8 +77,10 @@
 .nombre{
     color: #ffffff;
     font-family:Arial, Helvetica, sans-serif;
-    margin-left: 9.7rem;
+    justify-content: center;
+    text-align: center;
     font-size: 1.6rem;
+    text-transform: uppercase;
 }
 .linea{
     background-color: #ffffff;
@@ -183,5 +204,35 @@
 .eliminar:hover{
   background-color: #082238;
 }
+.tabla-bloque {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1000px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  margin-left: 30.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.tabla-usuarios th {
+  background-color: #0c3458;
+  color: white;
+}
+
 
 </style>

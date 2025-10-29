@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Material</title>
+    <title>Videos</title>
 </head>
 <body style="background: #ffffff;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: 17px; color: #0c3458;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Logo</a>
+          <a class="navbar-brand" href="/templates/Contenidos_digitales/material_contenidos.html"><img class="logo_javiera" src="/static/logo_javiera.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav justify-content-end" style="width: 100%;">
               <li class="nav-item-iniciar">
-              <a class="nav-link active" aria-current="page" href="/Principal/login.html">Iniciar</a>
+              <a class="nav-link active" aria-current="page" href="/index.html">Salir</a>
               </li>
               <li class="nav-item-sobre">
-                <a class="nav-link" href="/Principal/sobre_nosotros.html">Sobre nosotros</a>
-              </li>
-              <li class="nav-item-proyectos">
-                <a class="nav-link" href="./chat_contenidos.html">Chat</a>
+                <a class="nav-link" href="/templates/Contenidos_digitales/material_contenidos.html">Material</a>
               </li>
               <li class="nav-item-material">
-                <a class="nav-link" href="./material_contenidos.html">Material</a>
+                <a class="nav-link" href="/templates/Principal/sobre_nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item-material">
+                <a class="nav-link" href="/templates/Principal/proyectos.html">Proyectos</a>
               </li>
               <li class="nav-item-opciones dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,23 +41,103 @@
         </div>
       </nav>
 
+      <div class="linea_barra"></div>
+
       <div class="conten_titulos" style="margin-top: 70px; ">
         <strong><div><h1 class="h1">VIDEOS</h1></div>
         </strong>
       </div>
 
-        <div class="cuadro_azul" style="background-color: #0c3458;">
+      <div class="container1">
+        <div class="card">
+          <div id="player1" data-plyr-provider="youtube" data-plyr-embed-id="{{video_id[0]}}"></div>
+          <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+          <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+          <script>
+          const player1 = new Plyr('#player1');
+          </script>
+            <h2 class="nombre_video">{{nombre_video[0]}}</h2>
         </div>
+        <div class="card">
+          <div id="player2" data-plyr-provider="youtube" data-plyr-embed-id="{{video_id[1]}}"></div>
+          <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+          <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+          <script>
+            const player2 = new Plyr('#player2');
+          </script>
+          <h2 class="nombre_video">{{nombre_video[1]}}</h2>
+        </div>
+        <div class="card">
+          <div id="player3" data-plyr-provider="youtube" data-plyr-embed-id="{{video_id[2]}}"></div>
+          <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+          <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+          <script>
+            const player3 = new Plyr('#player3');
+          </script>
+          <h2 class="nombre_video">{{nombre_video[2]}}</h2>
+        </div>
+        <div class="card">
+          <div id="player4" data-plyr-provider="youtube" data-plyr-embed-id="{{video_id[3]}}"></div>
+          <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+          <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+          <script>
+            const player4 = new Plyr('#player4');
+          </script>
+          <h2 class="nombre_video">{{nombre_video[3]}}</h2>
+        </div>
+
+      </div>
+
+        <div class="cuadro_azul" style="background-color: #0c3458;">
+
+          <div class="container2">
+          <div class="card2">
+            <div id="player5" data-plyr-provider="youtube" data-plyr-embed-id="{{video_id[4]}}"></div>
+           <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+            <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+            <script>
+              const player5 = new Plyr('#player5');
+            </script>
+            <h2 class="nombre_video2">{{nombre_video[4]}}</h2>
+          </div>
+          <div class="card2">
+            <div id="player6" data-plyr-provider="youtube" data-plyr-embed-id="{{video_id[5]}}"></div>
+            <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+            <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+            <script>
+              const player6 = new Plyr('#player6');
+            </script>
+            <h2 class="nombre_video2">{{nombre_video[5]}}</h2>
+          </div>
+          <div class="card2">
+            <div id="player7" data-plyr-provider="youtube" data-plyr-embed-id="{{video_id[6]}}"></div>
+            <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+            <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+            <script>
+              const player7 = new Plyr('#player7');
+            </script>
+            <h2 class="nombre_video2">{{nombre_video[6]}}</h2>
+          </div>
+          <div class="card2">
+            <div id="player8" data-plyr-provider="youtube" data-plyr-embed-id="{{video_id[7]}}"></div>
+            <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+            <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+            <script>
+              const player8 = new Plyr('#player8');
+            </script>
+            <h2 class="nombre_video2">{{nombre_video[7]}}</h2>
+          </div>
+          </div>
 
         <div class="pie_pagina">
 
           <div class="contacto">
             <h2 class="contactanos">CONTACTANOS</h2>
             <div><h2 class="direccion"> Calle 53 No 40-65 | Medellín </h2>
-              <img class="direccion_img" src="/fotos/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+              <img class="direccion_img" src="/static/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
             </div>
             <div><h2 class="correo">contacto@javiera.edu.co</h2>
-              <img class="correo_img" src="/fotos/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+              <img class="correo_img" src="/static/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
             </div>
           </div>
   
@@ -65,7 +145,7 @@
             <h2 class="horario_text">HORARIO</h2>
             <div><h2 class="horario">Lunes — Viernes
               6:25 am a 2:25 pm</h2>
-              <img class="horario_img" src="/fotos/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+              <img class="horario_img" src="/static/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
             </div>
           </div>
   
@@ -73,74 +153,18 @@
             <h2 class="redes_text">REDES SOCIALES</h2>
             <div class="facebook">
               <a href="https://www.facebook.com/profile.php?id=100095186540988" target="_blank">
-              <img class="logo_facebook" src="/fotos/facebook-icon-free-png.webp" width="40px" height="40px">
+              <img class="logo_facebook" src="/static/facebook-icon-free-png.webp" width="40px" height="40px">
               </a>
             </div>
             <div class="instagram">
               <a href="https://www.instagram.com/i.e.javiera.londono/" target="_blank">
-              <img class="logo_instagram" src="/fotos/Instagram_icon.png.webp" width="40px" height="40px">
+              <img class="logo_instagram" src="/static/Instagram_icon.png.webp" width="40px" height="40px">
               </a>
             </div>
           </div>
   
         </div>
 
-        <div class="card1" style="width: 19rem;">
-                <video class="hola_mundo" width="300rem" height="200rem" controls>
-                    <iframe width="" height="315rem" src="https://www.youtube.com/watch?v=VxrIZGQfxmE&t=708s&pp=ygUKaG9sYSBtdW5kbw%3D%3D" frameborder="0" allowfullscreen></iframe>
-                </video>
-            <div class="card-body">
-              <h4 class="card-text">Programacion basica</h4>
-            </div>
-        </div>
-
-        <div class="card2" style="width: 19rem;">
-            <video class="hola_mundo" width="300rem" height="200rem" controls>
-                <iframe width="" height="315rem" src="https://www.youtube.com/watch?v=VxrIZGQfxmE&t=708s&pp=ygUKaG9sYSBtdW5kbw%3D%3D" frameborder="0" allowfullscreen></iframe>
-            </video>
-        <div class="card-body">
-          <h4 class="card-text">Programacion basica</h4>
-        </div>
-    </div>
-
-    <div class="card3" style="width: 19rem;">
-        <video class="hola_mundo" width="300rem" height="200rem" controls>
-            <iframe width="" height="315rem" src="https://www.youtube.com/watch?v=VxrIZGQfxmE&t=708s&pp=ygUKaG9sYSBtdW5kbw%3D%3D" frameborder="0" allowfullscreen></iframe>
-        </video>
-    <div class="card-body">
-      <h4 class="card-text">Programacion basica</h4>
-    </div>
-</div>
-
-    <div class="card4" style="width: 19rem;">
-        <video class="hola_mundo" width="300rem" height="200rem" controls>
-            <iframe width="" height="315rem" src="https://www.youtube.com/watch?v=VxrIZGQfxmE&t=708s&pp=ygUKaG9sYSBtdW5kbw%3D%3D" frameborder="0" allowfullscreen></iframe>
-        </video>
-        <div class="card-body">
-            <h4 class="card-text">Programacion basica</h4>
-        </div>
-    </div>
-
-    <div class="card5" style="width: 19rem;">
-        <video class="hola_mundo" width="300rem" height="200rem" controls>
-            <iframe width="" height="315rem" src="https://www.youtube.com/watch?v=VxrIZGQfxmE&t=708s&pp=ygUKaG9sYSBtdW5kbw%3D%3D" frameborder="0" allowfullscreen></iframe>
-        </video>
-        <div class="card-body">
-            <h4 class="card-text">Programacion basica</h4>
-        </div>
-    </div>
-
-    <div class="card6" style="width: 19rem;">
-        <video class="hola_mundo" width="300rem" height="200rem" controls>
-            <iframe width="" height="315rem" src="https://www.youtube.com/watch?v=VxrIZGQfxmE&t=708s&pp=ygUKaG9sYSBtdW5kbw%3D%3D" frameborder="0" allowfullscreen></iframe>
-        </video>
-        <div class="card-body">
-            <h4 class="card-text">Programacion basica</h4>
-        </div>
-    </div>
-
-        <div class="linea_barra">
-        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       </div>
@@ -157,6 +181,58 @@
     margin-left: 42%;
     text-align: center;
 }
+.navbar-nav{
+ margin-top: -0.3rem;
+}
+.logo_javiera{
+ height: 4.5rem;
+ margin-left: 1rem;
+ margin-top: 0.3rem;
+
+}
+.container1{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  width: auto;
+}
+.bg-light{
+  height: 2.6rem;
+}
+.nav-link:hover{
+  background-color: #cfcfcf;
+}
+.container2{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7rem;
+  background-color:#0c3458;
+  height: auto;
+  width: auto;
+}
+.card{
+  width: 17rem;
+  height: auto;
+  display: flex;
+  text-align: center;
+  border: none;
+}
+.card2{
+  width: 17rem;
+  height: auto;
+  text-align: center;
+}
+.nombre_video{
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: #0c3458;
+}
+.nombre_video2{
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color:white
+}
 .cuadro_azul{
     width: 100%;
     height: 100%;
@@ -170,7 +246,7 @@
     display: flex;
     width: 100%;
     height: 400px;
-    top: 1148px;
+    margin-top: 15rem;
     color: #fff;
 }
 .contactanos{
@@ -253,7 +329,7 @@
     background-color: #cccccc;
     width: 100%;
     height: 0.1px;
-    top: 50px;
+    top: 2.4rem;
     position: absolute;
     display: flex;
 }
@@ -276,50 +352,6 @@
 .nav-item-iniciar{
     background-color: #cfcfcf;
 }
-.card1{
-    margin-left: 8rem;
-    margin-top: 4rem;
-    color: #0c3458;
-    text-align: center;
-    border-radius: 0.3rem;
-}
-.card2{
-    margin-left: 36.5rem;
-    margin-top: -17rem;
-    color: #0c3458;
-    text-align: center;
-    border-radius: 0.3rem;
-}
-.card3{
-    margin-left: 67rem;
-    margin-top: -17rem;
-    color: #0c3458;
-    text-align: center;
-    border-radius: 0.3rem;
-}
-.card4{
-    margin-left: 67rem;
-    margin-top: 14rem;
-    border: #0c3458 solid 0.2rem;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 0.3rem;
-}
-.card5{
-    margin-left: 8rem;
-    margin-top: -17rem;
-    border: #0c3458 solid 0.2rem;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 0.3rem;
-}
-.card6{
-    margin-left: 36.5rem;
-    margin-top: -17rem;
-    border: #0c3458 solid 0.2rem;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 0.3rem;
-}
+
 
 </style>

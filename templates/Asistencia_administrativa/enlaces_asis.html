@@ -9,20 +9,23 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: 17px; color:#0c3458";>
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Inicio</a>
+          <a class="navbar-brand" href="/templates/Asistencia_administrativa/material_asis.html"><img class="logo_javiera" src="/static/logo_javiera.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav justify-content-end" style="width: 100%;">
               <li class="nav-item-iniciar">
-              <a class="nav-link active" aria-current="page" href="/Principal/login.html">Iniciar</a>
+                <a class="nav-link active" aria-current="page" href="/templates/index.html">Salir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/templates/Asistencia_administrativa/material_asis.html">Material</a>
               </li>
               <li class="nav-item-sobre">
-                <a class="nav-link" href="/Principal/sobre_nosotros.html">Sobre nosotros</a>
+                <a class="nav-link" href="/templates/Principal/sobre_nosotros.html">Sobre nosotros</a>
               </li>
               <li class="nav-item-proyectos">
-                <a class="nav-link" href="/Principal/proyectos.html">Proyectos</a>
+                <a class="nav-link" href="/templates/Principal/proyectos.html">Proyectos</a>
               </li>
               <li class="nav-item-contactanos dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,13 +51,17 @@
       </div>
 
       <div class="cuadro_info">
-        <h3>CURSOS DE PROGRAMACION:</h3>
-        <h4>Platzi: Curso de programacion basica</h4>
-        <h4>https://platzi.com/cursos/programacion-basica/</h4>
-        <h4>EDteam: Curso de programacion desde cero</h4>
-        <h4>https://ed.team/cursos/programacion</h4>
-        <h4>FreeCodeCamp:</h4>
-        <h4>https://www.freecodecamp.org/espanol/</h4>
+
+        {% for i in range(enlace_nombre|length) %}
+          <div class="container_enlaces">
+
+              <div class="enlace">
+                  <h2 class="nombre_enlace">{{enlace_nombre[i]}}</h2>
+                  <h4 class="link">{{enlace[i]}}</h4>
+              </div>
+
+          </div>
+        {% endfor %}
 
       </div>
 
@@ -63,10 +70,10 @@
         <div class="contacto">
           <h2 class="contactanos">CONTACTANOS</h2>
           <div><h2 class="direccion"> Calle 53 No 40-65 | Medellín </h2>
-            <img class="direccion_img" src="/fotos/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="direccion_img" src="/static/location_on_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
           <div><h2 class="correo">contacto@javiera.edu.co</h2>
-            <img class="correo_img" src="/fotos/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="correo_img" src="/static/mail_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
         </div>
 
@@ -74,20 +81,20 @@
           <h2 class="horario_text">HORARIO</h2>
           <div><h2 class="horario">Lunes — Viernes
             6:25 am a 2:25 pm</h2>
-            <img class="horario_img" src="/fotos/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
+            <img class="horario_img" src="/static/work_history_24dp_D30909_FILL0_wght400_GRAD0_opsz24.png" width="25px" height="25">
           </div>
         </div>
 
-        <div class="redes"> 
+        <div class="redes">
           <h2 class="redes_text">REDES SOCIALES</h2>
           <div class="facebook">
             <a href="https://www.facebook.com/profile.php?id=100095186540988" target="_blank">
-            <img class="logo_facebook" src="/fotos/facebook-icon-free-png.webp" width="40px" height="40px">
+            <img class="logo_facebook" src="/static/facebook-icon-free-png.webp" width="40px" height="40px">
             </a>
           </div>
           <div class="instagram">
             <a href="https://www.instagram.com/i.e.javiera.londono/" target="_blank">
-            <img class="logo_instagram" src="/fotos/Instagram_icon.png.webp" width="40px" height="40px">
+            <img class="logo_instagram" src="/static/Instagram_icon.png.webp" width="40px" height="40px">
             </a>
           </div>
         </div>
@@ -114,6 +121,38 @@
     margin-left: 42%;
     text-align: center;
 }
+.navbar-nav{
+ margin-top: -0.3rem;
+}
+.container_enlaces{
+  width: 850px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: column;
+  margin-bottom: 0.2rem;
+}
+.nombre_enlace{
+  color:#0c3458;
+  text-transform: uppercase;
+}
+.link{
+  color: #215888;
+  text-align: center;
+}
+.bg-light{
+  height: 2.6rem;
+}
+.logo_javiera{
+ height: 4.5rem;
+ margin-left: 1rem;
+ margin-top: 0.3rem;
+}
+.nav-item:hover{
+  background-color: #cfcfcf;
+}
 .h2{
     color: #0c3458;
     display:flex;
@@ -128,12 +167,6 @@ h3{
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
-h4{
-    color: #0c3458;
-    padding-top: 1rem;
-    padding-left: -1000rem;
-    text-align: center;
-}
 .Cuadro_azul{
     background-color: #0c3458;
     width: 100%;
@@ -146,19 +179,22 @@ h4{
     margin-left: 20%;
     background-color: white;
     width: 850px;
-    height: 600px;
+    min-height: 40rem;
+    height: auto;
     margin-top: 100px;
     z-index: +1;
     border: solid #0c3458 10px;
+    display: flex;
+    flex-direction: column;
 }
 .pie_pagina{
-    background-color: #282828;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 400px;
-    top: 1148px;
-    color: #fff;
+  background-color: #282828;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  margin-top: auto; 
+  margin-top: 5rem;
 }
 .contactanos{
     color: #ffffff;
@@ -240,7 +276,7 @@ h4{
     background-color: #cccccc;
     width: 100%;
     height: 0.1px;
-    top: 56px;
+    top: 2.4rem;
     position: absolute;
     display: flex;
 }

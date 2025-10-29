@@ -15,7 +15,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav justify-content-end" style="width: 100%; margin-top: 0px;">
               <li class="nav-item-iniciar">
-              <a class="nav-link active" aria-current="page" href="./Principal/login.html">Salir</a>
+              <a class="nav-link active" aria-current="page" href="/templates/index.html">Salir</a>
               </li>
               <li class="nav-item-sobre">
                 <a class="nav-link" href="./panel_admin.html">Panel</a>
@@ -37,8 +37,8 @@
         </div>
       </nav>
       <div class="conten_titulos" style="margin-top: 70px;">
-        <strong><h1 class="h1">BIENVENIDO</h1>
-        <h2 class="h2">{{ usuario.nombre }}</h2>
+        <strong><h1 class="h1">BIENVENID@</h1>
+        <h2 class="h2">{{ nombre_usuario }}</h2>
         </strong>
       </div>
 
@@ -144,8 +144,8 @@
     display:flex;
     margin-top: -20px;
     font-size: 60px;
-    margin-left: 39%;
     text-align: center;
+    justify-content: center;
 }   
 .h2{
     color: #0c3458;
@@ -258,13 +258,25 @@
     margin-left: 55%;
     margin-top: -15%;
 }
+.navbar-nav{
+  margin-top: -0.3rem;
+}
+.logo_javiera{
+  height: 4.5rem;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+
+}
+.bg-light{
+  height: 2.6rem;
+}
 .linea_barra{
-    background-color: #cccccc;
-    width: 100%;
-    height: 0.1px;
-    top: 50px;
-    position: absolute;
-    display: flex;
+  background-color: #cccccc;
+  width: 100%;
+  height: 0.1px;
+  top: 2.5rem;
+  position: absolute;
+  display: flex;
 }
 .nav-item-sobre:hover{
     background-color: #cfcfcf;

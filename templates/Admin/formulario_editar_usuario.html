@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario edición</title>
+</head>
+<body>
+    <div class="formulario-container">
+  <h2>Editar usuario</h2>
+  <form method="post" action="/Admin/editar_usuarios.html" class="formulario">
+    <input type="hidden" name="id" value="{{ usuario.id }}">
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" value="{{ usuario.nombre }}" required>
+
+    <label for="identificacion">Identificación:</label>
+    <input type="text" id="identificacion" name="identificacion" value="{{ usuario.identificacion }}" required>
+
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" name="contraseña" value="{{ usuario.contraseña }}" required>
+
+    <label for="grado">Grado:</label>
+    <select id="grado" name="grado" required>
+      <option value="10" {% if usuario.grado == 10 %}selected{% endif %}>10</option>
+      <option value="11" {% if usuario.grado == 11 %}selected{% endif %}>11</option>
+    </select>
+
+    <button type="submit">Guardar cambios</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+<style>
+
+.tabla-bloque {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1000px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.tabla-usuarios th {
+  background-color: #0c3458;
+  color: white;
+}
+
+.boton-editar {
+  background-color: #0c3458;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.boton-editar:hover {
+  background-color: #092a45;
+}
+
+.formulario-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0c3458;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #092a45;
+}
+
+
+</style>
