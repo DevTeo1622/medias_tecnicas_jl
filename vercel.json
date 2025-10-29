@@ -1,8 +1,8 @@
 {
   "builds": [
-    { "src": "server.py", "use": "@vercel/python" }
+    { "src": "asgi_handler.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "server.py" }
+    { "src": "/(.*)", "dest": "asgi_handler.py" }
   ]
 }
