@@ -258,7 +258,7 @@ async def info_software(db: SessionDepends,request:Request):
 async def procesar_login(db : SessionDepends, request: Request, identificacion: str = Form(...), contraseña: str = Form(...)):
     consulta = text("SELECT * FROM usuario WHERE identificacion = :identificacion AND contraseña = :contraseña")
     resultado = db.execute(consulta, {"identificacion": identificacion, "contraseña": contraseña}).fetchone()
-    rol = resultado.rol if hasattr(resultado, 'rol') else resultado[3]
+    rol = resultado.rol if hasattr(resultado, 'rol') else resultado
 
 
     if resultado and rol == "estudiante":
@@ -294,7 +294,7 @@ async def procesar_login(db : SessionDepends, request: Request, identificacion: 
 async def procesar_login(db : SessionDepends, request: Request, identificacion: str = Form(...), contraseña: str = Form(...)):
     consulta = text("SELECT * FROM usuario WHERE identificacion = :identificacion AND contraseña = :contraseña")
     resultado = db.execute(consulta, {"identificacion": identificacion, "contraseña": contraseña}).fetchone()
-    rol = resultado.rol if hasattr(resultado, 'rol') else resultado[3]
+    rol = resultado.rol if hasattr(resultado, 'rol') else resultado
 
 
     if resultado and rol == "estudiante":
